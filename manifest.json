@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "CRemover",
+  "version": "1.0",
+  "description": "Changes the word 'Charts' to 'Experiences' on Roblox.",
+  "icons": {
+    "48": "CRemover.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.roblox.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}
